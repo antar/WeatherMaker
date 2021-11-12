@@ -1,2 +1,6 @@
 # WeatherMaker
-Android App for a clean Weather View
+
+## Author
+
+* **antar** - *Initial work* - [antar](https://github.com/antar)
+
