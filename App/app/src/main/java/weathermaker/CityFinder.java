@@ -24,5 +24,16 @@ public class CityFinder extends AppCompatActivity {
                 finish();
             }
         });
+
+        editText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                String newCity = editText.getText().toString();
+                Intent intent = new Intent(CityFinder.this, MainActivity.class);
+                intent.putExtra("City", newCity);
+                startActivity(intent);
+                return false;
+            }
+        });
     }
 }
